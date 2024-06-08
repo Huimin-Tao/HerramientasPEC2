@@ -23,7 +23,7 @@
             <!-- logotipo -->
             <div class="logo">
                 <a href="index.html" aria-label="Ir a la página de inicio" title="página de inicio">
-                    <img src="images/logo-light.svg" alt="Logo de Coldplay">
+                    <img src="images/logo-light.svg" alt="Logo de Coldplay" loading="lazy">
                 </a>
             </div>
 
@@ -73,7 +73,7 @@
                             <source media="(min-width:769px)" srcset="./images/detail.jpg?as=webp" type="image/webp">
                             <!-- Imagen de respaldo para navegadores antiguos -->
                             <img src="./images/detail.jpg" alt="Coldplay actuando en vivo en la calle" width="1000"
-                            height="667" class="img-fluid">
+                            height="667" class="img-fluid" loading="lazy">
                         </picture>
 
                         <p class="meta-data">Artículo escrito por Magdalena Bordalí - 15 de agosto de 2018 </p>
@@ -168,7 +168,7 @@
                                 <picture>
                                     <source srcset="./images/articulo-1.jpeg?as=avif&width=800" type="image/avif">
                                     <source srcset="./images/articulo-1.jpeg?as=webp&width=800" type="image/webp">
-                                    <img src="./images/articulo-1.jpeg?width=800" alt="Concierto vivo de Parachutes" class="img-fluid">
+                                    <img src="./images/articulo-1.jpeg?width=800" alt="Concierto vivo de Parachutes" class="img-fluid" loading="lazy">
                                 </picture>
 
 
@@ -186,7 +186,7 @@
                                 <picture>
                                     <source srcset="./images/articulo-2.jpeg?as=webp&width=800" type="image/webp">
                                     <source srcset="./images/articulo-2.jpeg?as=avif&width=800" type="image/avif">
-                                    <img src="./images/articulo-2.jpeg?width=800" alt="Concierto vivo de Mylo Xyloto" class="img-fluid">
+                                    <img src="./images/articulo-2.jpeg?width=800" alt="Concierto vivo de Mylo Xyloto" class="img-fluid" loading="lazy">
                                 </picture>
 
                             </div>
@@ -202,7 +202,7 @@
                                  <picture>
                                     <source srcset="./images/articulo-3.jpeg?as=avif&width=800" type="image/avif">
                                     <source srcset="./images/articulo-3.jpeg?as=webp&width=800" type="image/webp">
-                                    <img src="./images/articulo-3.jpeg?width=800" alt="Concierto vivo de Ghost Stories" class="img-fluid">
+                                    <img src="./images/articulo-3.jpeg?width=800" alt="Concierto vivo de Ghost Stories" class="img-fluid" loading="lazy">
                                 </picture>
 
                             </div>
@@ -231,15 +231,15 @@
             <p class="copyright">2024 &copy; HUIMIN TAO</p>
             <div class="logo">
                 <a href="index.html" aria-label="Ir a la página de inicio" title="página de inicio">
-                    <img src="images/logo-dark.svg" alt="Logo de Coldplay">
+                    <img src="images/logo-dark.svg" alt="Logo de Coldplay" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
 
 
-    <script type="module" src="/src/scripts/app.ts"></script>
-    <script type="module" src="/src/scripts/darkmode.js"></script>
+    <script defer type="module" src="/src/scripts/app.ts"></script>
+    <script defer type="module" src="/src/scripts/darkmode.js"></script>
 </body>
 
 </html>
