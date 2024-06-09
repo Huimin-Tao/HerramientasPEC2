@@ -10,9 +10,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
-        rel="stylesheet">
+
+    <!-- Carga asíncrona a los Google Fonts  -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -23,7 +25,7 @@
             <!-- logotipo -->
             <div class="logo">
                 <a href="index.html" aria-label="Ir a la página de inicio" title="página de inicio">
-                    <img src="images/logo-light.svg" alt="Logo de Coldplay" loading="lazy">
+                    <img src="images/logo-light.svg" alt="Logo de Coldplay" width="150" height="60" loading="lazy">
                 </a>
             </div>
 
@@ -166,9 +168,9 @@
                             <div class="card-image">
                                 <!-- Conversión de formato a avif/webp con Sharp (plan A:avif ; plan B : webp; plan C : jpeg original) -->
                                 <picture>
-                                    <source srcset="./images/articulo-1.jpeg?as=avif&width=800" type="image/avif">
-                                    <source srcset="./images/articulo-1.jpeg?as=webp&width=800" type="image/webp">
-                                    <img src="./images/articulo-1.jpeg?width=800" alt="Concierto vivo de Parachutes" class="img-fluid" loading="lazy">
+                                    <source srcset="./images/articulo-1.jpeg?as=avif&width=600" type="image/avif">
+                                    <source srcset="./images/articulo-1.jpeg?as=webp&width=600" type="image/webp">
+                                    <img src="./images/articulo-1.jpeg?width=600" alt="Concierto vivo de Parachutes" class="img-fluid" width="600" height="400" loading="lazy">
                                 </picture>
 
 
@@ -184,9 +186,9 @@
 
                                 <!-- Conversión de formato a avif/webp con Sharp (plan A: webp; plan B : avif; plan C : jpeg original)-->
                                 <picture>
-                                    <source srcset="./images/articulo-2.jpeg?as=webp&width=800" type="image/webp">
-                                    <source srcset="./images/articulo-2.jpeg?as=avif&width=800" type="image/avif">
-                                    <img src="./images/articulo-2.jpeg?width=800" alt="Concierto vivo de Mylo Xyloto" class="img-fluid" loading="lazy">
+                                    <source srcset="./images/articulo-2.jpeg?as=webp&width=600" type="image/webp">
+                                    <source srcset="./images/articulo-2.jpeg?as=avif&width=600" type="image/avif">
+                                    <img src="./images/articulo-2.jpeg?width=600" alt="Concierto vivo de Mylo Xyloto" class="img-fluid" width="600" height="400" loading="lazy">
                                 </picture>
 
                             </div>
@@ -200,9 +202,9 @@
                             <div class="card-image">
                                  <!-- Conversión de formato a avif/webp con Sharp (plan A:avif ; plan B : webp; plan C : jpeg original) -->
                                  <picture>
-                                    <source srcset="./images/articulo-3.jpeg?as=avif&width=800" type="image/avif">
-                                    <source srcset="./images/articulo-3.jpeg?as=webp&width=800" type="image/webp">
-                                    <img src="./images/articulo-3.jpeg?width=800" alt="Concierto vivo de Ghost Stories" class="img-fluid" loading="lazy">
+                                    <source srcset="./images/articulo-3.jpeg?as=avif&width=600" type="image/avif">
+                                    <source srcset="./images/articulo-3.jpeg?as=webp&width=600" type="image/webp">
+                                    <img src="./images/articulo-3.jpeg?width=600" alt="Concierto vivo de Ghost Stories" class="img-fluid" width="600" height="400" loading="lazy">
                                 </picture>
 
                             </div>
@@ -231,7 +233,7 @@
             <p class="copyright">2024 &copy; HUIMIN TAO</p>
             <div class="logo">
                 <a href="index.html" aria-label="Ir a la página de inicio" title="página de inicio">
-                    <img src="images/logo-dark.svg" alt="Logo de Coldplay" loading="lazy">
+                    <img src="images/logo-dark.svg" alt="Logo de Coldplay" width="150" height="60" loading="lazy">
                 </a>
             </div>
         </div>
