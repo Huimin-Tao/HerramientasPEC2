@@ -11,9 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-   <!-- Carga asíncrona a los Google Fonts  -->
-   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" as="style">
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Carga asíncrona a los Google Fonts  -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -59,9 +63,11 @@
                 <!-- Tarjeta 1: Viva la Vida -->
                 <div class="tarjeta">
                     <figure class="tarjeta-imagen">
-                        <source srcset="./images/tarjeta-1.jpg?as=avif&width=300" type="image/avif">
-                        <source srcset="./images/tarjeta-1.jpg?as=webp&width=300" type="image/webp">
-                        <img src="./images/tarjeta-1.jpg" alt="portada del álbum Viva la vida" width="300" height="300" class="img-fluid">
+                        <picture>
+                            <source srcset="./images/tarjeta-1.jpg?as=avif&width=300" type="image/avif">
+                            <source srcset="./images/tarjeta-1.jpg?as=webp&width=300" type="image/webp">
+                            <img src="./images/tarjeta-1.jpg" alt="portada del álbum Viva la vida" width="300" height="300" class="img-fluid">
+                        </picture>
                     </figure>
                     <div class="tarjeta-contenido">
                         <h2><a href="detail.html">Viva la Vida or Death and All His Friends</a></h2>
@@ -226,8 +232,8 @@
     </main>
 
 
-     <!--Pie de la página-->
-     <footer class="footer">
+    <!--Pie de la página-->
+    <footer class="footer">
         <ul class="legal">
             <li><a href="index.html">Home</a></li>
             <li><a href="category.html">Discografía</a></li>
@@ -245,7 +251,7 @@
         </div>
     </footer>
 
-    <script defer type="module" src="scripts/app.ts" ></script>
+    <script defer type="module" src="scripts/app.ts"></script>
     <script defer type="module" src="/src/scripts/darkmode.js"></script>
 </body>
 
