@@ -10,9 +10,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
-        rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -25,7 +26,7 @@
                     <!-- logotipo -->
                     <div class="logo-portada">
                         <a href="index.html" aria-label="Ir a la página de inicio" title="página de inicio">
-                            <img src="images/logo-dark.svg" alt="Logo de Coldplay" loading="lazy">
+                            <img src="images/logo-dark.svg" alt="Logo de Coldplay" loading="lazy" width="150" height="60">
                         </a>
                     </div>
 
@@ -73,6 +74,7 @@
                         sizes="(max-width: 993px) 150px, 250px"
                         src="images/Chris-250w.jpeg"
                         alt="foto de Chris Martin"
+                        width="250" height="250"
                         class="clip">
                     </figure>
                     <figure>
@@ -82,7 +84,9 @@
                         sizes="(max-width:992px) 150px, 250px"
                         src="images/Jonny-250w.jpeg"
                         alt="foto de Jonny Buckland"
-                        class="clip" loading="lazy">
+                        class="clip"
+                        width="250" height="250"
+                        loading="lazy">
                     </figure>
                     <figure>
                         <!-- Resolution Switching(tamaño) -->
@@ -92,6 +96,7 @@
                         src="images/Guy-250w.jpeg"
                         alt="foto de Guy Berryman"
                         class="clip"
+                        width="250" height="250"
                         loading="lazy">
                     </figure>
                     <figure>
@@ -102,6 +107,7 @@
                         src="images/Will-250w.jpeg"
                         alt="foto de Will Champion"
                         class="clip"
+                        width="250" height="250"
                         loading="lazy">
                     </figure>
                 </div>
