@@ -3,7 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead, not IE <= 11, not OperaMini all",
+  "browserslist": {
+    "modern": [
+      "last 2 Chrome versions",
+      "last 2 Firefox versions",
+      "last 2 Safari versions",
+      "last 2 Edge versions"
+    ],
+    "legacy": [
+      "> 0.5%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead"
+    ]
+  },
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
@@ -26,5 +39,25 @@
   },
   "dependencies": {
     "darkmode-js": "^1.5.7"
+  },
+  "targets": {
+    "modern": {
+      "context": "browser",
+      "includeNodeModules": true,
+      "outputFormat": "esmodule",
+      "distDir": "dist/modern",
+      "engines": {
+        "browsers": "> 0.25%, not dead, not IE 11, not op_mini all"
+      }
+    },
+    "legacy": {
+      "context": "browser",
+      "includeNodeModules": true,
+      "outputFormat": "global",
+      "distDir": "dist/legacy",
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, Firefox ESR, not dead"
+      }
+    }
   }
 }
