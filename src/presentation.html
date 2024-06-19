@@ -12,8 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Preload : Google Fonts  -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -109,7 +113,8 @@
                 <!-- Miembro 1 : Chris Martin -->
                 <div class="miembro">
                     <figure>
-                        <img src="./images/Chris-500w.jpeg" alt="foto de Chris Martin" class="img-fluid mask" width="500" height="500" loading="lazy">
+                        <img src="./images/Chris-500w.jpeg" alt="foto de Chris Martin" class="img-fluid mask"
+                            width="500" height="500" loading="lazy">
                     </figure>
 
                     <div class="miembro-contenido">
@@ -125,7 +130,8 @@
                 <!-- Miembro 2 : Jonny Buckland -->
                 <div class="miembro">
                     <figure class="even">
-                        <img src="images/Jonny-500w.jpeg" alt="foto de Jonny buckland" class="img-fluid mask" width="500" height="500" loading="lazy">
+                        <img src="images/Jonny-500w.jpeg" alt="foto de Jonny buckland" class="img-fluid mask"
+                            width="500" height="500" loading="lazy">
                     </figure>
 
                     <div class="miembro-contenido">
@@ -142,7 +148,8 @@
                 <!-- Miembro 3 : Guy Berryman -->
                 <div class="miembro">
                     <figure>
-                        <img src="images/Guy-500w.jpeg" alt="foto de Guy Berryman" class="img-fluid mask" width="500" height="500" loading="lazy">
+                        <img src="images/Guy-500w.jpeg" alt="foto de Guy Berryman" class="img-fluid mask" width="500"
+                            height="500" loading="lazy">
                     </figure>
 
                     <div class="miembro-contenido">
@@ -159,7 +166,8 @@
                 <!-- Miembro 4 : Will Champion -->
                 <div class="miembro">
                     <figure class="even">
-                        <img src="images/Will-500w.jpeg" alt="foto de Will Champion" class="img-fluid mask" width="500" height="500" loading="lazy">
+                        <img src="images/Will-500w.jpeg" alt="foto de Will Champion" class="img-fluid mask" width="500"
+                            height="500" loading="lazy">
                     </figure>
 
                     <div class="miembro-contenido">
@@ -176,7 +184,8 @@
                 <!-- Miembro 5 : Phil Harvey -->
                 <div class="miembro">
                     <figure>
-                        <img src="images/Phill-500w.jpeg" alt="foto de Phil Harvey" class="img-fluid mask" width="500" height="500" loading="lazy">
+                        <img src="images/Phill-500w.jpeg" alt="foto de Phil Harvey" class="img-fluid mask" width="500"
+                            height="500" loading="lazy">
                     </figure>
 
                     <div class="miembro-contenido">
@@ -213,12 +222,17 @@
         </div>
     </footer>
 
-    <script defer src="./scripts/app.ts"></script>
-    <script defer type="module" src="/src/scripts/darkmode.js"></script>
+    <!-- Modern scripts  -->
+    <script defer src="scripts/app.ts"></script>
+    <script defer type="module" src="scripts/darkmode.js"></script>
+    <!-- Legacy scripts -->
+    <script nomodule defer src="scripts/app.ts"></script>
+    <script nomodule defer src="scripts/darkmode.legacy.js"></script>
+
 
     <!-- Interaccion para lazy loading with facade  -->
     <script>
-        document.querySelector('.youtube-facade').addEventListener('click', function() {
+        document.querySelector('.youtube-facade').addEventListener('click', function () {
             var iframe = document.createElement('iframe');
             iframe.setAttribute('width', '560');
             iframe.setAttribute('height', '315');

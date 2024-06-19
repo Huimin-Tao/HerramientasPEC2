@@ -260,12 +260,14 @@
         </div>
     </footer>
 
-    <script defer src="scripts/app.ts"></script>
+
 
     <!-- Modern scripts  -->
+    <script defer src="scripts/app.ts"></script>
     <script defer type="module" src="scripts/darkmode.js"></script>
     <!-- Legacy scripts -->
-    <script defer nomodule src="scripts/darkmode.js"></script>
+    <script nomodule defer src="scripts/app.ts"></script>
+    <script nomodule defer src="scripts/darkmode.legacy.js"></script>
 
 </body>
 
