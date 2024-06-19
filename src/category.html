@@ -261,14 +261,16 @@
     </footer>
 
 
-
-    <!-- Modern scripts  -->
     <script defer src="scripts/app.ts"></script>
-    <script defer type="module" src="scripts/darkmode.js"></script>
-    <!-- Legacy scripts -->
-    <script nomodule defer src="scripts/app.ts"></script>
-    <script nomodule defer src="scripts/darkmode.legacy.js"></script>
 
+    <!-- Darkmode JSDelivr CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 import Darkmode from 'darkmode-js';
 
+
 // Configuración del botón de toggle para cambiar entre el modo claro y oscuro
 // Opciones para configurar darkmode-js
 var options = {

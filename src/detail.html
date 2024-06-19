@@ -12,8 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Preload: Google Fonts  -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -68,14 +72,16 @@
                         <!-- Dirección de arte -->
                         <picture>
                             <!-- conversión de formato a avif con Sharp -->
-                            <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=avif" type="image/avif">
+                            <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=avif"
+                                type="image/avif">
                             <source media="(min-width:769px)" srcset="./images/detail.jpg?as=avif" type="image/avif">
                             <!-- Fallback a webP -->
-                            <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=webp" type="image/webp">
+                            <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=webp"
+                                type="image/webp">
                             <source media="(min-width:769px)" srcset="./images/detail.jpg?as=webp" type="image/webp">
                             <!-- Imagen de respaldo para navegadores antiguos -->
                             <img src="./images/detail.jpg" alt="Coldplay actuando en vivo en la calle" width="1000"
-                            height="667" class="img-fluid">
+                                height="667" class="img-fluid">
                         </picture>
 
                         <p class="meta-data">Artículo escrito por Magdalena Bordalí - 15 de agosto de 2018 </p>
@@ -87,7 +93,8 @@
                         <h2>Inspiración y Transformación Musical de Coldplay</h2>
                         <h3>Origen de la Inspiración</h3>
                         <p>Una visita al cuadro de Frida Kahlo y la necesidad de explorar nuevos horizontes creativos
-                            motivaron a <em lang="en">Chris Martin</em> y a sus compañeros a producir el álbum más vendido
+                            motivaron a <em lang="en">Chris Martin</em> y a sus compañeros a producir el álbum más
+                            vendido
                             de 2008. Este
                             disco, tanto aclamado como criticado, marcó un cambio decisivo en el estilo musical y en las
                             carreras de sus integrantes.</p>
@@ -170,7 +177,8 @@
                                 <picture>
                                     <source srcset="./images/articulo-1.jpeg?as=avif&width=600" type="image/avif">
                                     <source srcset="./images/articulo-1.jpeg?as=webp&width=600" type="image/webp">
-                                    <img src="./images/articulo-1.jpeg?width=600" alt="Concierto vivo de Parachutes" class="img-fluid" width="600" height="400" loading="lazy">
+                                    <img src="./images/articulo-1.jpeg?width=600" alt="Concierto vivo de Parachutes"
+                                        class="img-fluid" width="600" height="400" loading="lazy">
                                 </picture>
 
 
@@ -188,7 +196,8 @@
                                 <picture>
                                     <source srcset="./images/articulo-2.jpeg?as=webp&width=600" type="image/webp">
                                     <source srcset="./images/articulo-2.jpeg?as=avif&width=600" type="image/avif">
-                                    <img src="./images/articulo-2.jpeg?width=600" alt="Concierto vivo de Mylo Xyloto" class="img-fluid" width="600" height="400" loading="lazy">
+                                    <img src="./images/articulo-2.jpeg?width=600" alt="Concierto vivo de Mylo Xyloto"
+                                        class="img-fluid" width="600" height="400" loading="lazy">
                                 </picture>
 
                             </div>
@@ -200,11 +209,12 @@
 
                         <article>
                             <div class="card-image">
-                                 <!-- Conversión de formato a avif/webp con Sharp (plan A:avif ; plan B : webp; plan C : jpeg original) -->
-                                 <picture>
+                                <!-- Conversión de formato a avif/webp con Sharp (plan A:avif ; plan B : webp; plan C : jpeg original) -->
+                                <picture>
                                     <source srcset="./images/articulo-3.jpeg?as=avif&width=600" type="image/avif">
                                     <source srcset="./images/articulo-3.jpeg?as=webp&width=600" type="image/webp">
-                                    <img src="./images/articulo-3.jpeg?width=600" alt="Concierto vivo de Ghost Stories" class="img-fluid" width="600" height="400" loading="lazy">
+                                    <img src="./images/articulo-3.jpeg?width=600" alt="Concierto vivo de Ghost Stories"
+                                        class="img-fluid" width="600" height="400" loading="lazy">
                                 </picture>
 
                             </div>
@@ -240,12 +250,17 @@
     </footer>
 
 
-    <!-- Modern scripts  -->
     <script defer src="scripts/app.ts"></script>
-    <script defer type="module" src="scripts/darkmode.js"></script>
-    <!-- Legacy scripts -->
-    <script nomodule defer src="scripts/app.ts"></script>
-    <script nomodule defer src="scripts/darkmode.legacy.js"></script>
+
+    <!-- Darkmode JSDelivr CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
 </body>
 
 </html>
