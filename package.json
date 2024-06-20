@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
-  "browserslist":
-    "> 0.5%, last 2 versions, not dead, not IE <= 11, not OperaMini all"
-  ,
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "parcel:build:modern": "parcel build src/index.html --dist-dir dist/modern --target modern",
+    "parcel:build:legacy": "parcel build src/index.html --dist-dir dist/legacy --target legacy",
+    "build": "npm-run-all clean parcel:build:modern parcel:build:legacy"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +25,33 @@
   },
   "dependencies": {
     "darkmode-js": "^1.5.7"
+  },
+  "browserslist": {
+    "modern": [
+      "last 2 Chrome versions",
+      "last 2 Firefox versions",
+      "last 2 Safari versions"
+    ],
+    "legacy": [
+      "> 0.5%",
+      "last 2 versions",
+      "not dead"
+    ]
+  },
+
+  "targets": {
+    "modern": {
+      "distDir": "./dist/modern",
+      "engines": {
+        "browsers": "last 2 Chrome versions, last 2 Firefox versions, last 2 Safari versions"
+      }
+    },
+    "legacy": {
+      "distDir": "./dist/legacy",
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, not dead"
+      }
+    }
   }
 
 }
