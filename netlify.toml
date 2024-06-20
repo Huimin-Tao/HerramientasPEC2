@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/modern"  # Ajusta esto según tu configuración de Parcel.
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
