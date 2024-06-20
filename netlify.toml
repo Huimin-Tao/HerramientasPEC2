@@ -1,8 +1,14 @@
 [build]
-  publish = "dist/modern"  # Ajusta esto según tu configuración de Parcel.
   command = "npm run build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/modern/:splat"
+  status = 200
+  condition = "TypeScriptModules"
+
+[[redirects]]
+  from = "/*"
+  to = "/legacy/:splat"
   status = 200
