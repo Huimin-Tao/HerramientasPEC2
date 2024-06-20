@@ -8,9 +8,7 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "parcel:build:modern": "parcel build src/index.html --dist-dir dist/modern --target modern",
-    "parcel:build:legacy": "parcel build src/index.html --dist-dir dist/legacy --target legacy",
-    "build": "npm-run-all clean parcel:build:modern parcel:build:legacy"
+    "build": "npm-run-all clean parcel:build"
   },
   "keywords": [],
   "author": "",
