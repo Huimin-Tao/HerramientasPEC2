@@ -19,6 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
 
+    <!-- preload: imagen de fondo -->
+    <link rel="preload" href="images/hero.webp" as="image">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -67,10 +70,6 @@
                     grupo
                     ha dejado una huella indeleble en el panorama musical internacional. Aquí celebramos su música, su
                     historia y los cinco talentosos músicos que la hacen posible.</p>
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OZxFNk3aIM0?si=jF45L51qTAxf4v78"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe> -->
 
                 <!-- Lazy Loading with Facade  -->
                 <div class="youtube-facade">
@@ -113,7 +112,7 @@
                 <!-- Miembro 1 : Chris Martin -->
                 <div class="miembro">
                     <figure>
-                        <img src="./images/Chris-500w.jpeg" alt="foto de Chris Martin" class="img-fluid mask"
+                        <img src="./images/Chris-500w.webp" alt="foto de Chris Martin" class="img-fluid mask"
                             width="500" height="500" loading="lazy">
                     </figure>
 
@@ -130,7 +129,7 @@
                 <!-- Miembro 2 : Jonny Buckland -->
                 <div class="miembro">
                     <figure class="even">
-                        <img src="images/Jonny-500w.jpeg" alt="foto de Jonny buckland" class="img-fluid mask"
+                        <img src="images/Jonny-500w.webp" alt="foto de Jonny buckland" class="img-fluid mask"
                             width="500" height="500" loading="lazy">
                     </figure>
 
@@ -148,7 +147,7 @@
                 <!-- Miembro 3 : Guy Berryman -->
                 <div class="miembro">
                     <figure>
-                        <img src="images/Guy-500w.jpeg" alt="foto de Guy Berryman" class="img-fluid mask" width="500"
+                        <img src="images/Guy-500w.webp" alt="foto de Guy Berryman" class="img-fluid mask" width="500"
                             height="500" loading="lazy">
                     </figure>
 
@@ -166,7 +165,7 @@
                 <!-- Miembro 4 : Will Champion -->
                 <div class="miembro">
                     <figure class="even">
-                        <img src="images/Will-500w.jpeg" alt="foto de Will Champion" class="img-fluid mask" width="500"
+                        <img src="images/Will-500w.webp" alt="foto de Will Champion" class="img-fluid mask" width="500"
                             height="500" loading="lazy">
                     </figure>
 
@@ -184,7 +183,7 @@
                 <!-- Miembro 5 : Phil Harvey -->
                 <div class="miembro">
                     <figure>
-                        <img src="images/Phill-500w.jpeg" alt="foto de Phil Harvey" class="img-fluid mask" width="500"
+                        <img src="images/Phill-500w.webp" alt="foto de Phil Harvey" class="img-fluid mask" width="500"
                             height="500" loading="lazy">
                     </figure>
 
@@ -222,16 +221,10 @@
         </div>
     </footer>
 
-    <script defer src="scripts/app.ts"></script>
 
-    <!-- Dark mode jsdelivr CDN -->
-    <script defer src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
-    </script>
+    <script defer src="scripts/app.ts"></script>
+    <script type="module" src="scripts/darkmode.js"></script>
+
 
     <!-- Interaccion para lazy loading with facade  -->
     <script>

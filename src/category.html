@@ -66,8 +66,7 @@
                         <picture>
                             <source srcset="./images/tarjeta-1.jpg?as=avif&width=300" type="image/avif">
                             <source srcset="./images/tarjeta-1.jpg?as=webp&width=300" type="image/webp">
-                            <img src="./images/tarjeta-1.jpg" alt="portada del álbum Viva la vida" width="300"
-                                height="300" class="img-fluid">
+                            <img src="./images/tarjeta-1.jpg" alt="portada del álbum Viva la vida" width="300" height="300" class="img-fluid" fetchpriority="high">
                         </picture>
                     </figure>
                     <div class="tarjeta-contenido">
@@ -262,15 +261,8 @@
 
 
     <script defer src="scripts/app.ts"></script>
+    <script type="module" src="scripts/darkmode.js"></script>
 
-    <!-- Darkmode JSDelivr CDN -->
-    <script defer src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
-    </script>
 </body>
 
 </html>

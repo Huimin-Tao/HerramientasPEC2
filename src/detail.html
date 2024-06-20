@@ -80,8 +80,8 @@
                                 type="image/webp">
                             <source media="(min-width:769px)" srcset="./images/detail.jpg?as=webp" type="image/webp">
                             <!-- Imagen de respaldo para navegadores antiguos -->
-                            <img src="./images/detail.jpg" alt="Coldplay actuando en vivo en la calle" width="1000"
-                                height="667" class="img-fluid">
+                            <img src="./images/detail.jpg" alt="Coldplay actuando en vivo en la calle" width="800"
+                                height="553" class="img-fluid" fetchpriority="high">
                         </picture>
 
                         <p class="meta-data">Artículo escrito por Magdalena Bordalí - 15 de agosto de 2018 </p>
@@ -251,15 +251,8 @@
 
 
     <script defer src="scripts/app.ts"></script>
+    <script type="module" src="scripts/darkmode.js"></script>
 
-    <!-- Darkmode JSDelivr CDN -->
-    <script defer src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
-    </script>
 
 </body>
 
