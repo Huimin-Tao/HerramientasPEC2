@@ -17,7 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Preload de la imagen LCP  -->
-    <link rel="preload" href="./images/detail-close-portrait.jpg?as=avif" as="image">
+    <link rel="preload" href="./images/detail-close-portrait.jpg?as=avif" as="image"  media="(max-width: 768px)">
+    <link rel="preload" href="./images/detail.jpg?as=avif" as="image" media="(min-width: 769px)">
+
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -71,14 +73,14 @@
 
                         <!-- Dirección de arte -->
                         <picture>
-                            <!-- conversión de formato a avif con Sharp -->
-                            <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=avif"
-                                type="image/avif">
-                            <source media="(min-width:769px)" srcset="./images/detail.jpg?as=avif" type="image/avif">
-                            <!-- Fallback a webP -->
+                            <!-- conversión de formato a webp con Sharp -->
                             <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=webp"
+                                type="image/avif">
+                            <source media="(min-width:769px)" srcset="./images/detail.jpg?as=webp" type="image/avif">
+                            <!-- Fallback a avif -->
+                            <source media="(max-width:768px)" srcset="./images/detail-close-portrait.jpg?as=avif"
                                 type="image/webp">
-                            <source media="(min-width:769px)" srcset="./images/detail.jpg?as=webp" type="image/webp">
+                            <source media="(min-width:769px)" srcset="./images/detail.jpg?as=webp" type="image/avif">
                             <!-- Imagen de respaldo para navegadores antiguos -->
                             <img src="./images/detail.jpg" alt="Coldplay actuando en vivo en la calle" width="500"
                                 height="333" class="img-fluid">
