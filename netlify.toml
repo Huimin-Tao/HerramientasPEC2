@@ -6,9 +6,10 @@
   from = "/*"
   to = "/modern/:splat"
   status = 200
-  condition = "TypeScriptModules"
+  condition = "Browsers: Modern"
 
 [[redirects]]
   from = "/*"
   to = "/legacy/:splat"
   status = 200
+
